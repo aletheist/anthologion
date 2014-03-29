@@ -1,0 +1,188 @@
+<lml>
+	<meta date="">
+		<title>First Hour</title>
+		<!-- Allow multiple commemorations. ID used by movable hymns. -->
+		<commemoration movable="true" id=""></commemoration>
+		<commemoration movable="true"></commemoration>
+	</meta>
+	<service>
+		<section heading="Call to Prayer">
+			<!-- Should there be an indication of ranking? -->
+			<reader>
+				Through the prayers of our holy Fathers, Lord Jesus Christ our God,
+				have mercy on us. Amen.
+				<br />
+				Glory to Thee, our God, glory to Thee.
+			</reader>
+		</section>
+		<section heading="Trisagion">
+			<reader>
+				Heavenly King, O Comforter, the Spirit of truth, Who art everywhere
+				present	and fillest all things, O treasury of every good and Bestower
+				of life: come and dwell in us, and cleanse us from every stain, and
+				save our souls, O Good One.
+				<br />
+				<repeat times="3">Holy God, Holy Mighty, Holy Immortal, have
+					mercy on us.</repeat>
+				<br />
+				Glory to the Father, and to the Son, and to the Holy Spirit, Both
+				now and ever and unto ages of ages. Amen.
+				<br />
+				All-holy Trinity, have mercy on us. Lord, be gracious unto our sins.
+				Master,	pardon our iniquities. Holy One, visit and heal our
+				infirmities for Thy Name's sake.
+				<br />
+				<repeat time="3">Lord, have mercy.</repeat>
+				<br />
+				Glory to the Father, and to the Son, and to the Holy Spirit, Both
+				now and ever and unto ages of ages. Amen.
+				<br />
+				Our Father, Which art in the Heavens, hallowed be Thy Name. Thy
+				Kingdom	come. Thy will be done, on earth as it is in Heaven. Give us
+				this day our daily bread. And forgive us our debts, as we forgive our
+				debtors. And lead us not into temptation, but deliver us from the
+				evil one.
+				<br />
+				Amen.
+				<repeat times="3">Lord, have mercy.</repeat>
+				Glory to the Father, and to the
+				Son, and to the Holy Spirit, Both now
+				and ever and unto ages of
+				ages. Amen.
+				<br />
+			</reader>
+			<section heading="Come let us Worship">
+				<reader>
+					O come, let us worship and fall down before our King and God. O
+					come,
+					let us worship and fall down before Christ, our King and God. O come,
+					let us worship and fall down before Him, Christ the King and our
+					God.
+				</reader>
+			</section>
+		</section>
+		<section heading="Psalms of the First Hour">
+			<!-- Populate psalms from some resource -->
+			<reader>
+				<psalm numbering="LXX" number="83" />
+				<psalm numbering="LXX" number="84" />
+				<psalm numbering="LXX" number="85" />
+				<psalm numbering="LXX" number="85" verses="17" />
+				Glory to the Father, and to the Son, and to the Holy Spirit, Both
+				now and ever and unto ages of ages. Amen.
+				<br />
+				<repeat times="3">Alleluia, alleluia, alleluia: Glory to Thee, O
+					God.</repeat>
+				<br />
+				<repeat times="3">Lord, have mercy.</repeat>
+		</section>
+		<section heading="Commemoration Hymns of the day">
+			Glory to the Father, and to the Son, and to the Holy Spirit.
+			<!-- Insert one or more tropars -->
+			<troparion moveable="true" id="" tone=""></troparion>
+			Both now and ever and unto ages of ages. Amen.
+		</reader>
+		</section>
+		<section heading="Commemoration of the Hour">
+			<reader>
+				O Thou Who for our sakes wast born of a Virgin, and didst suffer
+				crucifixion, O Good One, and didst despoil death by death, and as
+				God didst reveal the Ressurection: Disdain them not which Thou hast
+				fashioned with Thy hand; show us Thy love for mankind, O Merciful
+				One; accept the Theotokos that gave Thee birth, who intercedeth for
+				us; and do Thou, our Saviour, save a desparing people.
+				<br />
+				Deiver us not up utterly, for Thy holy Name's sake, neither disanul
+				Thou Thy covenant, and cause not Thy mercy to depart from us, for
+				Abraham's sake, Thy beloved, and for Issac's sake, Thy servant, and
+				for Israel's, Thy holy one.
+				<br />
+			</reader>
+		</section>
+		<section heading="Dismissal">
+			<reader>
+				<repeat times="3">Holy God, Holy Mighty, Holy Immortal, have
+					mercy on us.</repeat>
+				Glory to the Father, and to the Son, and to the Holy Spirit, Both
+				now and ever and unto ages of ages. Amen.
+				<br />
+				All-holy Trinity, have mercy on us. Lord, be gracious unto our sins.
+				Master, pardon our iniquities. Holy One, visit and heal our
+				infirmities for Thy Name's sake.
+				<br />
+				<repeat times="3">Lord, have mercy.</repeat>
+				<br />
+				Glory to the Father, and to the Son, and to the Holy Spirit, Both
+				now and ever and unto ages of ages. Amen.
+				<br />
+				Our Father, Which art in the Heavens, hallowed be Thy Name. Thy
+				Kingdom come. Thy will be done, on earth as it is in Heaven. Give us
+				this day our daily bread. And forgive us our debts, as we forgive
+				our debtors. And lead us not into temptation, but deliver us from
+				the evil one.
+				<br />
+				Amen.
+				<br />
+				As first-fruits of our nature to the Planter of created things, the
+				world presenteth the God-bearing martyred Saints in off'ring unto
+				Thee, O Lord. Through their entreaties, keep Thy Church in deep
+				peace and divine tranquillity, through the pure Theotokos, O Thou
+				Who art greatly merciful.
+				<br />
+				<repeat times="40">Lord, have mercy.</repeat>
+				<br />
+				Thou Who at all times and at every hour, in Heaven and on earth, art
+				worshipped and glorified, O Christ God, Who art long-suffering,
+				plenteous in mercy, most compassionate, Who lovest the righteous and
+				hast mercy on sinners, Who callest all to salvation through the
+				promise of good things to come: receive, O Lord, our prayers at this
+				hour, and guide our life toward Thy commandments. Sanctify our
+				souls, make chaste our bodies, correct our thoughts, purify our
+				intentions, and deliver us from every sorrow, evil, and pain.
+				Compass us about with Thy holy Angels, that, guided and guarded by
+				their array, we may attain to the unity of faith, and the knowledge
+				of Thine unapproachable glory; for blessed art Thou unto the ages of
+				ages. Amen.
+				<br />
+				<repeat times="3">Lord, have mercy.</repeat>
+				<br />
+				Glory to the Father, and to the Son, and to the Holy Spirit, Both
+				now and ever and unto ages of ages. Amen.
+				<br />
+				More honourable than the Cherubim, and beyond compare more glorious
+				than the Seraphim, thee who without corruption gavest birth to God
+				the Word, the very Theotokos, thee do we magnify.
+				<br />
+				In the Name of the Lord, bless. Amen.
+				<br />
+				O Master, Lord Jesus Christ our God, Who art long-suffering in the
+				face of our transgressions, and Who hast brought us even unto this
+				present hour, wherin Thou didst hang upon the life-creating Tree,
+				and dist make a way into Paradise for the sinners and Thine unworthy
+				servants; for we have sinned and committed iniquity, and are not
+				worthy to lift up our eyes and behold the height of Heaven, for we
+				have abandoned the way of Thy righteousness, and have walked in the
+				desires of our hearts. But we beseech Thine incomparable goodness:
+				Spare us, O Lord, according to the multitude of Thy mercy, and save
+				us for Thy holy Name's sake, for our days have wasted away in
+				vanity. Deliver us from the hand of the adversary, and forgive us
+				our sins, and mortify our carnal mind; that putting aside the old
+				man, we may be clad with the new, and live for Thee, our Master and
+				Guardian; and that thus by following in Thy commandments, we may
+				attain to rest everlasting, wherein is the dwelling-place of them
+				that love Thee, O Christ our God, and unto Thee we send up glory,
+				with Thy Father which is without beginning, and Thine All-holy and
+				good and life-creating Spirit, now and ever, and unto the ages of
+				ages. Amen.
+				<br />
+				Glory to the Father, and to the Son, and to the Holy Spirit, Both
+				now and ever and unto ages of ages. Amen. Lord, have mercy. (Three
+				times). Lord, bless.
+				<br />
+				Through the prayers of our holy Fathers, Lord Jesus Christ our God,
+				have mercy on us. Amen.
+				<br />
+			</reader>
+		</section>
+	</service>
+</lml>

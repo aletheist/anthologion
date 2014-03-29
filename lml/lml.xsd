@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://orthoheaven.org/lml/" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://orthoheaven.org/lml/">
+
+    <complexType name="LMLRoot">
+    	<sequence>
+    		<element name="meta" type="tns:LMLHeading"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="lml" type="tns:LMLRoot"></element>
+
+
+    <complexType name="LMLHeading">
+    	<sequence>
+    		<element name="title" type="string"></element>
+    		<element name="commemoration" type="string"></element>
+    	</sequence>
+    	<attribute name="date" type="date"></attribute>
+    </complexType>
+
+
+
+    <complexType name="LMLText">
+    	<simpleContent>
+    		<extension base="string">
+    			<attribute name="movable" type="boolean"></attribute>
+    		</extension>
+    	</simpleContent>
+    </complexType>
+</schema>
