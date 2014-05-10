@@ -38,7 +38,7 @@ def get_scripture( day_to_fetch = date.today(), max_retries = 3, max_readings = 
   #lookup failure changes. To mitigate against this, I chose a to stop the loop at 20 readings because I don't
   #think we ever have that many, and it prevents an infinite loop.
   numReadings = max_readings
-  readingNum = 0
+  readingNum = 1
   while readingNum < numReadings:
     tries = 0
     tryagain = True
@@ -91,7 +91,7 @@ def get_scripture( day_to_fetch = date.today(), max_retries = 3, max_readings = 
 text = '<html>\n'
 text += '<body>\n'
 
-now = date.today() + timedelta(days=1)
+now = date.today()# + timedelta(days=1)
 
 day = now.day
 month = now.month
