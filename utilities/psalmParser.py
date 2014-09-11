@@ -22,6 +22,8 @@ def psalm_of_today():
 
 
   psalm_body = found_psalm.find_next(re.compile("h4|p"))
+  lineno = 0
+  antiphon = "\n<p><i>ANTIPHON</i><p>\n"
   while psalm_body.name != "h2":
     try:
       verse_numbers = psalm_body.find_all("small")
@@ -30,10 +32,13 @@ def psalm_of_today():
       italics = psalm_body.find_all("i")
       for italic in italics:
         italic.unwrap()
+      if "<p>" in str(psalm_body):
+        text += antiphon
       text += str(psalm_body)
       psalm_body = psalm_body.find_next(re.compile("h2|h4|p"))
     except AttributeError:
       continue 
+  text += antiphon
   return text
 
 
