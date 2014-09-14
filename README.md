@@ -8,3 +8,6 @@ Right now this just serves to grab a Psalm, scrape daily Scripture readings and 
 Sept. 11 2014
 =============
 Current project: Add option to include Anglican antiphons between Psalm paragraphs.
+
+If anyone knows of such a thing an Eastern Orthodox antiphons/refrains for
+each Psalm, I would love to have that.
