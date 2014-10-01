@@ -3,7 +3,7 @@ import re
 from bs4 import BeautifulSoup
 
 def get_antiphon(number, numbering = "LXX"):
-  antiphon_filepath = "../resources/antiphons"
+  antiphon_filepath = "../resources/antiphons_saas"
   hantiphons = open(antiphon_filepath)
   antiphon = "ANTIPHON"
   for line in hantiphons.readlines():
@@ -19,10 +19,9 @@ def get_antiphon(number, numbering = "LXX"):
   return antiphon.strip()
 
 #Get psalm by
-def get_psalm(number, numbering = "LXX", antiphons = False):
+def get_pomog_psalm(number, numbering = "LXX", antiphons = False):
   text = ""
   day_of_year = datetime.date.today().strftime("%j")
-  psalm_number = number
   psalter_filepath = "../resources/pomog_psalter.htm"
 
   soup = BeautifulSoup(open(psalter_filepath))
@@ -30,7 +29,7 @@ def get_psalm(number, numbering = "LXX", antiphons = False):
   psalm_headings = soup.findAll('h2')
   for heading in psalm_headings:
     heading_text = heading.contents[0].strip()
-    if heading_text == ("Psalm " + str(psalm_number).strip()):
+    if heading_text == ("Psalm " + str(number).strip()):
       found_psalm = heading
       text += str(found_psalm)
 
@@ -39,7 +38,7 @@ def get_psalm(number, numbering = "LXX", antiphons = False):
   lineno = 0
   antiphon = ""
   if antiphons: 
-    antiphon += "\n<p><i>" + get_antiphon(psalm_number) + "</i><p>\n"
+    antiphon += "<p><i>" + get_antiphon(number, numbering) + "</i><p>"
   
   while psalm_body.name != "h2":
     try:
@@ -58,6 +57,33 @@ def get_psalm(number, numbering = "LXX", antiphons = False):
   text += antiphon
   return text
 
+def get_saas_psalm(number, numbering = "LXX", antiphons = False):
+  text = ""
+  antiphon = ""
+  if antiphons:
+    antiphon += "<p><i>" + get_antiphon(number) + "</i><p>"
+
+  psalter_filepath = "../resources/PsalmsOSB_rough.html"
+  soup = BeautifulSoup(open(psalter_filepath))
+  found_psalm=None
+  psalm_headings = soup.findAll('h2')
+  for heading in psalm_headings:
+    heading_text = heading.contents[0].strip()
+    if ("Psalm " + str(number).strip()) in heading_text:
+      found_psalm = heading
+      text += str(found_psalm)
+
+  
+  psalm_body = found_psalm.find_next(re.compile("h4|p|div"))
+  text += antiphon
+  for line in str(psalm_body).split('\n'):
+    if line.strip() == "<br/>":
+      text += antiphon
+    else:
+      text += str(line)
+    text += "\n"
+  text += antiphon
+  return text
 
 #This function has no relation to any liturgical calculations. It is purely
 #arbitrary.
